@@ -41,4 +41,8 @@
   const userProfile1 = new UserProfile(1, "Jane", 10, "USA", "California");
   const userProfile2 = new UserProfile(2, "John", 10, "USA", "California");
   const userProfile3 = new UserProfile(3, "Angel", 10, "USA", "California");
+
+  console.log(userProfile1);
+  console.log(userProfile2);
+  console.log(userProfile3);
 }
