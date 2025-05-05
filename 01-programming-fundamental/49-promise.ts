@@ -1,10 +1,10 @@
 /* -------------------------------------------------------------------------- */
 /*                               Promise Example                              */
 /* -------------------------------------------------------------------------- */
-// const myPromise = new Promise((resolve, reject) => {
-// return resolve("Promise terpenuhi");
-// return reject("Promise gagal");
-// });
+const myPromise = new Promise((resolve, reject) => {
+  return resolve("Promise terpenuhi");
+  // return reject("Promise gagal");
+});
 
 /* ------------------------ Access Promise - dot then ----------------------- */
 // console.log(myPromise);
@@ -25,10 +25,11 @@
 // async function handlePromise() {
 //   try {
 //     const data = await myPromise;
+//     throw new Error("Error here");
 //     console.log(data);
 //     console.log("Resolved hore!");
 //   } catch (error) {
-//     console.log(error);
+//     console.log(error.message);
 //     console.log("Huu rejected!");
 //   } finally {
 //     console.log("Finished!");
