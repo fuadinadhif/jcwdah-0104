@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro To CSS</title>
+    <!-- internal CSS -->
+    <style>
+      #paradise {
+        color: blueviolet;
+      }
+    </style>
+    <!-- external CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="icon.svg" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- inline CSS -->
+    <h1
+      id="css"
+      style="
+        color: red;
+        font-size: 55px;
+        /* border: 10px dashed red; */
+        border-width: 10px;
+        border-style: dotted;
+        border-color: red;
+        padding: 8px;
+        border-radius: 15px;
+        font-family: monospace, sans-serif;
+        text-transform: lowercase;
+        text-decoration: line-through;
+        text-shadow: -4px 4px 14px rgba(0, 0, 0, 0.5);
+      "
+    >
+      Welcome To CSS
+    </h1>
+    <h1 id="paradise">Welcome To My Paradise</h1>
+    <h1 id="setiabudi">Welcome To Setiabudi</h1>
+    <div
+      style="background-image: url(image.png); width: 500px; height: 200px"
+    ></div>
+  </body>
+</html>

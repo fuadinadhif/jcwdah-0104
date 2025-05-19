@@ -1,0 +1,28 @@
+#judul {
+  border: 1px solid red;
+}
+
+.title {
+  font-size: 50px;
+  border: 1px solid blue;
+}
+
+h1 {
+  color: yellow !important;
+  font-size: 100px;
+  border: 1px solid yellow;
+}
+
+h1#judul.title {
+  border: 1px solid green;
+}
+
+h1#judul {
+  border: 1px solid orange;
+}
+
+/* Specificity 
+1. Cara penulisan CSS (external/internal/inline)
+2. Jenis selector (id -> class -> element name)
+3. Specificity
+*/

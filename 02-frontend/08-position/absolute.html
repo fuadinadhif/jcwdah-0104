@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Absolute Position</title>
+  </head>
+  <style>
+    body {
+      height: 500vh;
+    }
+
+    div {
+      height: 100px;
+      width: 100px;
+    }
+
+    #parent {
+      height: 200px;
+      width: 300px;
+      background-color: red;
+      position: absolute;
+      top: 50px;
+    }
+
+    #children {
+      background-color: gold;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    #neighbour {
+      background-color: black;
+    }
+  </style>
+  <body>
+    <div id="parent">
+      <div id="children"></div>
+    </div>
+    <div id="neighbour"></div>
+  </body>
+</html>

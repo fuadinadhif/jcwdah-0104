@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query</title>
+    <style>
+      div {
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        /* border: 2px solid black; */
+        border-width: 2px;
+        border-style: solid;
+        border-color: black;
+      }
+
+      div:nth-child(3) {
+        display: none;
+      }
+
+      @media (min-width: 500px) {
+        div:nth-child(1) {
+          width: 200px;
+        }
+      }
+
+      @media (min-width: 1000px) {
+        div:nth-child(1) {
+          width: 400px;
+        }
+
+        div:nth-child(3) {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+  </body>
+</html>

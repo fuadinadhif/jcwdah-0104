@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* CSS RESET */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img,
+svg,
+picture,
+video,
+canvas {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+/* GLOBAL STYLE */
+:root {
+  --cream: #f2eae2;
+  --aurometal-saurus: #6c7289;
+  --aquamarine: #3d8168;
+  --deep-aquamarine: #1a4032;
+  --gunmetal: #1c232b;
+  --pure-white: #ffffff;
+}
+
+/* STYLE */
+body {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  background-color: var(--cream);
+  margin: 16px;
+}
+
+#card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 600px;
+  background-color: var(--pure-white);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#text-container {
+  padding: 32px;
+}
+
+#sub-title {
+  color: var(--aurometal-saurus);
+  text-transform: uppercase;
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+}
+
+#text-container h1 {
+  font-family: Fraunces, serif;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 32px;
+  color: var(--gunmetal);
+  margin-bottom: 24px;
+}
+
+#content {
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 23px;
+  color: var(--aurometal-saurus);
+  margin-bottom: 29px;
+}
+
+#price span:nth-child(1) {
+  font-family: Fraunces, serif;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 32px;
+  color: var(--aquamarine);
+}
+
+#price span:nth-child(2) {
+  font-family: Montserrat, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 23px;
+  color: var(--aurometal-saurus);
+  text-decoration: line-through;
+}
+
+#price {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+button {
+  height: 48px;
+  background-color: var(--aquamarine);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+}
+
+button img {
+  width: 16px;
+  height: 15px;
+}
+
+button span {
+  color: var(--pure-white);
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#image-container img {
+  object-fit: cover;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 475px) {
+  #card {
+    grid-template-columns: 1fr;
+  }
+
+  #image-container {
+    height: 240px;
+  }
+}

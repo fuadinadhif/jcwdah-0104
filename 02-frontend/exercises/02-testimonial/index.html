@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testimonial</title>
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: #ecf2f8;
+        min-height: 100vh;
+      }
+
+      main {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+        height: 572px;
+        max-width: 1110px;
+        place-content: center;
+        gap: 30px;
+      }
+
+      article {
+        height: 100%;
+        width: 100%;
+        background-color: cornflowerblue;
+      }
+
+      article:nth-child(1) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+
+      article:nth-child(3) {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 4;
+        grid-column-end: 5;
+      }
+
+      article:nth-child(5) {
+        grid-column-start: 2;
+        grid-column-end: 4;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article>1</article>
+      <article>2</article>
+      <article>3</article>
+      <article>4</article>
+      <article>5</article>
+    </main>
+  </body>
+</html>
