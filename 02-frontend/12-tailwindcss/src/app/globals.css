@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-faiz: 320px;
+}
+
+.ulala {
+  padding: 32px;
+}
