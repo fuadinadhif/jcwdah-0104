@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Buah"
+  },
+  {
+    "id": 2,
+    "name": "Sayur"
+  },
+  {
+    "id": 3,
+    "name": "Susu"
+  },
+  {
+    "id": 4,
+    "name": "Snack"
+  },
+  {
+    "id": 5,
+    "name": "Bumbu"
+  },
+  {
+    "id": 6,
+    "name": "Sabun"
+  },
+  {
+    "id": 7,
+    "name": "Shampoo"
+  }
+]
